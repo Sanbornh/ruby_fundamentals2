@@ -21,3 +21,6 @@ print_list(grocery_list)			# Prints full list
 bananas?(grocery_list)				# Checks if you need bananas
 puts grocery_list[1]					# Prints the second item in the list
 print_list(grocery_list.sort) # Prints the alphabetized list
+
+updated_list = grocery_list.delete("salmon") 	# Remove salmon
+print_list(grocery_list.sort)									# Print thew newer list
