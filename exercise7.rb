@@ -8,6 +8,13 @@ def increase_size(per, hash)
 	hash.each { |key, value| hash[key] = (value * (1 + (per * 0.01))).round }
 end
 
+# Returns the total of all students in all cohorts
+def total_students(hash)
+	total = 0
+	hash.each { |key, value| total += value }
+	return total
+end
+
 students = {
 	:cohort1 => 34,
 	:cohort2 => 42,
@@ -28,3 +35,5 @@ print_hash(students)
 
 students.delete(:cohort2)
 print_hash(students)
+
+puts total_students(students)
