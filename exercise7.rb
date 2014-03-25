@@ -1,3 +1,4 @@
+# Prints pairs of hash keys with their associated values
 def print_hash(hash)
 	hash.each { |key , value| puts "#{key}: #{value} students" }
 end
@@ -15,7 +16,15 @@ students = {
 
 print_hash(students)
 
+# Add a fourth cohort to students
 students[:cohort4] = 43
+
 puts students.keys
 
-print_hash(increase_size(5, students))
+# Increase class sizes by 5% and print out the update cohorts and sizes
+students = increase_size(5, students)
+print_hash(students)
+
+
+students.delete(:cohort2)
+print_hash(students)
