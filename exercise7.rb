@@ -4,9 +4,12 @@ end
 
 
 students = {
-	:cohorts1 => 34,
-	:cohorts2 => 42,
-	:cohorts3 => 22
+	:cohort1 => 34,
+	:cohort2 => 42,
+	:cohort3 => 22
 }
 
 print_hash(students)
+
+students[:cohort4] = 43
+puts students.keys
