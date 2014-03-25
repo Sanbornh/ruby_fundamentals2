@@ -19,3 +19,4 @@ grocery_list << "rice"
 
 print_list(grocery_list)
 bananas?(grocery_list)
+puts grocery_list[1]
