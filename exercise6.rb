@@ -24,3 +24,5 @@ print_list(grocery_list.sort) # Prints the alphabetized list
 
 updated_list = grocery_list.delete("salmon") 	# Remove salmon
 print_list(grocery_list.sort)									# Print thew newer list
+
+puts "A change!"
