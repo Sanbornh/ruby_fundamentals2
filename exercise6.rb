@@ -17,6 +17,7 @@ print_list(grocery_list)
 
 grocery_list << "rice"
 
-print_list(grocery_list)
-bananas?(grocery_list)
-puts grocery_list[1]
+print_list(grocery_list)			# Prints full list
+bananas?(grocery_list)				# Checks if you need bananas
+puts grocery_list[1]					# Prints the second item in the list
+print_list(grocery_list.sort) # Prints the alphabetized list
